@@ -1,0 +1,187 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #eaf5f8;
+    color: #000000;
+    padding-top: 0;
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    color: #e41b36;
+    text-decoration: dotted;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navbar list styling */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a, ul li button {
+    font-size: 18px;
+    color: #a6cefc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: #b7d7fc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+/* Hover effects for links and buttons */
+ul li a:hover {
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #524b4b;
+}
+
+/* Button-specific styling */
+button {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #131824;
+}
+
+/* Intro section */
+.intro {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: #0f5fbb;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Image styling */
+.image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Download button */
+.download {
+    background-color: #e89002;
+    text-align: center;
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 24px; /* Reduced size for better mobile fit */
+    font-weight: bold;
+    width: auto;
+}
+
+/* Centering the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #000000;
+    font-size: 16px;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px; /* Adjusted to fit smaller screens */
+    }
+
+    p {
+        font-size: 16px; /* Adjusted for readability on mobile */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center; /* Center-align items on smaller screens */
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    ul li {
+        margin: 5px 0;
+        text-align: center; /* Center text for better alignment on mobile */
+    }
+
+    .download {
+        font-size: 20px; /* Further reduced size for small screens */
+        width: 100%; /* Make button fill the available width */
+    }
+
+    .button-container {
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 601px) and (max-width: 992px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .download {
+        font-size: 22px;
+    }
+}
